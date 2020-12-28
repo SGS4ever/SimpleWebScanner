@@ -1,0 +1,73 @@
+
+   <!DOCTYPE html>
+<head>
+<meat charset='utf-8' />
+<title>ScanReport</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <style>body{font-family: "Italic";font-size: 20px;background-image: url(report.jpg);background-size: cover;}
+
+   h1{font-family:"Times New Roman";font-size: 50px; text-align: center; text-shadow: 2px 2px gray}
+
+   table {margin-top: 3%; font-size: 30px;color: black;font-weight: bolder;}
+   </style>
+   </head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+
+   <h1>GL_SCAN_REPORT</h1>
+</div>
+</div>
+   <div class="row">
+<div class="col-md-12">
+
+
+   <h4>Target:https://www.bihuoedu.com/vul/sqli/sqli_id.php</h4>
+
+   <table class="table table-hover">
+<tr>
+<td class="col-md-2">CHECK_TYPE</td>
+<td class="col-md-2">RESULT</td>
+
+   <td class="col-md-8">INFO</td>
+</tr>
+
+   
+<tr>
+<td>Weak_Password</td>
+<td>FAIL</td>
+<td class="col-md-8">Nothing founded.  </td>
+</tr>
+
+   
+<tr>
+<td>SQL</td>
+<td>ERROR_BASED_INJECTION</td>
+<td class="col-md-8">Method : post| PostData: {'submit': '≤È—Ø"\'()', 'id': '")\'('}</td>
+</tr>
+
+   
+<tr>
+<td>XSS</td>
+<td>REFLECTIVE_XSS</td>
+<td class="col-md-8">method:POST| data={'submit': '≤È—Ø', 'id': '&lt;&#47;script&gt;"&gt;&lt;script&gt;prompt(R0xfVEVTVElORw==SEFWRVlPVVhTUw==)&lt;&#47;script&gt;'}</td>
+</tr>
+
+   
+<tr>
+<td>File</td>
+<td>vulnerable</td><td class="col-md-8">1.php</td>
+</tr>
+
+    
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
